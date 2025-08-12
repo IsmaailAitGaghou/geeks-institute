@@ -7,15 +7,15 @@ else:
     print("You're not tall enough to ride a roller coaster")
 
 # Exercise 5: Favorite Numbers
-my_favorite_number = set([7, 14, 21])
+my_favorite_number = {7, 14, 21}
 my_favorite_number.add(28)
 my_favorite_number.add(35)
 
 my_favorite_number.remove(35)
 print(my_favorite_number)
 
-friend_fav_numbers = set([3, 14, 9])
+friend_fav_numbers = {3, 14, 9}
 
-our_fav_numbers = my_favorite_number + friend_fav_numbers
+our_fav_numbers = my_favorite_number.union(friend_fav_numbers)
 print(our_fav_numbers)
 
