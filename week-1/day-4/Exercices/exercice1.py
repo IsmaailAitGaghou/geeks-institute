@@ -33,11 +33,11 @@ class Siamese(Cat):
         return f"{sounds}"
 
 
-all_cats = [
-    Bengal("Bengal", 2),
-    Chartreux("Chartreux", 3),
-    Siamese("Siamese", 1)
-]
+bangal = Bengal("Bengal", 2)
+chartreux = Chartreux("Chartreux", 3)
+siamese = Siamese("Siamese", 1)
+
+all_cats = [bangal, chartreux, siamese]
 
 sara_pets = Pets(all_cats)
 sara_pets.walk()

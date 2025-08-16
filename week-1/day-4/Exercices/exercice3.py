@@ -25,15 +25,15 @@ class PetDog(Dog):
         else:
             print(f"{self.name} is not trained yet.")
 
-# if __name__ == "__main__":
-#     # Create PetDog instances
-#     buddy = PetDog("Buddy", 5, 30)
-#     max_dog = PetDog("Max", 4, 25)
-#     rocky = PetDog("Rocky", 3, 20)
+if __name__ == "__main__":
+    # Create PetDog instances
+    buddy = PetDog("Buddy", 5, 30)
+    max_dog = PetDog("Max", 4, 25)
+    rocky = PetDog("Rocky", 3, 20)
 
-#     buddy.train()  
+    buddy.train()  
     
-#     buddy.play(max_dog.name, rocky.name) 
+    buddy.play(max_dog.name, rocky.name) 
 
-#     max_dog.do_a_trick()  
-#     buddy.do_a_trick()
+    max_dog.do_a_trick()  
+    buddy.do_a_trick()

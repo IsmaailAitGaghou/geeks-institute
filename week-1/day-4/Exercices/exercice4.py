@@ -12,13 +12,13 @@ class Family:
             if member['name'] == name:
                 return member['age'] >= 18
         return False
-    
+
     def family_presentation(self):
         print(f"The {self.last_name}")
         for member in self.members:
             for key, value in member.items():
                 print(f"{key}: {value}")
-
+                
 family = Family("Smith")
 
 family.members = [
