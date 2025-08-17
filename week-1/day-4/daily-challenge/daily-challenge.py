@@ -1,7 +1,8 @@
 import math
 
+
 class Pagination:
-    def __init__(self, page_size = 10, items = None):
+    def __init__(self, page_size=10, items=None):
         self.page_size = max(1, int(page_size))
         self.items = items if items is not None else []
         self.current_idx = 0
@@ -37,25 +38,21 @@ class Pagination:
         return self
 
     def __str__(self):
-        return '\n'.join(map(str, self.get_visible_items()))
+        return "\n".join(map(str, self.get_visible_items()))
+
 
 alphabetList = list("abcdefghijklmnopqrstuvwxyz")
 p = Pagination(4, alphabetList)
 
 print(p.get_visible_items())
-# ['a', 'b', 'c', 'd']
 
 p.next_page()
 print(p.get_visible_items())
-# ['e', 'f', 'g', 'h']
 
 p.last_page()
 print(p.get_visible_items())
-# ['y', 'z']
 
 p.go_to_page(10)
 print(p.current_idx + 1)
-# Output: 7
 
 p.go_to_page(0)
-# Raises ValueError
