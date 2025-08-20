@@ -43,10 +43,10 @@ class Circle:
 
 if __name__ == "__main__":
     c1 = Circle(radius=5)
-    c2 = Circle(diameter=12) 
+    c2 = Circle(diameter=12)
     c3 = Circle(radius=3)
 
-    print(c1) 
+    print(c1)
     print(c2)
     print(c3)
 

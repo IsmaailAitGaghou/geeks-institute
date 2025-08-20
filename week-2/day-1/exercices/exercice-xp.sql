@@ -24,7 +24,6 @@ INSERT INTO customers (customer_id, customer_last_name, customer_first_name) VAL
 
 
 SELECT * FROM items;
-SELECT * FROM customers;
 
 SELECT * FROM items WHERE price > 80
 SELECT * FROM items WHERE price <= 300
@@ -32,4 +31,4 @@ SELECT * FROM items WHERE price <= 300
 SELECT * FROM customers WHERE customer_last_name = "Smith";
 SELECT * FROM customers WHERE customer_last_name = "Jones";
 
-SELECT * FROM customers WHERE NOT customer_first_name = "Scott";
+SELECT * FROM customers WHERE customer_first_name != "Scott";
