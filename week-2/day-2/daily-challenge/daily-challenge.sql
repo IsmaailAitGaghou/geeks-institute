@@ -1,0 +1,4 @@
+-- Q1: The answer will be 0
+-- Q2: The answer will be 2
+-- Q3: The answer will be 0
+-- Q4: The answer will be 2
