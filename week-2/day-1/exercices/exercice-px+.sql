@@ -19,40 +19,49 @@ FROM students
 Select first_name,
     last_name
 FROM students
+
 Select first_name,
     last_name
 FROM students
 WHERE student_id = 2
+
 Select first_name,
     last_name
 FROM students
 WHERE last_name = 'Benichou'
     AND first_name = 'Marc'
+
 Select first_name,
     last_name
 FROM students
 WHERE last_name = 'Benichou'
     OR first_name = 'Marc'
+
 Select first_name,
     last_name
 FROM students
 WHERE first_name LIKE '%a%'
+
 Select first_name,
     last_name
 FROM students
 WHERE first_name ILIKE 'a%'
+
 Select first_name,
     last_name
 FROM students
 WHERE first_name ILIKE '%a'
+
 Select first_name,
     last_name
 FROM students
 WHERE first_name ILIKE '%a_'
+
 Select first_name,
     last_name
 FROM students
 WHERE student_id IN (1, 3)
+
 SELECT *
 FROM students
 WHERE date_birth >= '2000-01-01';
