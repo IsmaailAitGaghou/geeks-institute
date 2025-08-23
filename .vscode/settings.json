@@ -29,6 +29,26 @@
             "database": "bootcamp",
             "username": "postgres",
             "password": "ismaail123@"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "dvdrental",
+            "database": "dvdrental",
+            "username": "postgres",
+            "password": "ismaail123@"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "dvdrental2",
+            "database": "dvdrental2",
+            "username": "postgres",
+            "password": "ismaail123@"
         }
     ]
 }
