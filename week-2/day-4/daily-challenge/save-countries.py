@@ -38,7 +38,7 @@ def get_country_data(country):
 
 
 def save_to_db(countries):
-    
+
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
@@ -50,9 +50,7 @@ def save_to_db(countries):
 
         cursor.executemany(insert_query, countries)
         conn.commit()
-        print(
-            f"Successfully inserted {cursor.rowcount} countries into the database."
-        )
+        print(f"Successfully inserted {cursor.rowcount} countries into the database.")
         conn.close()
     except Exception as e:
         print(f"Database error: {e}")
@@ -68,7 +66,6 @@ def main():
 
     print(f"Retrieved {len(data)} countries.")
 
-    
     random_countries = random.sample(data, 10)
     print("Selected 10 random countries.")
 

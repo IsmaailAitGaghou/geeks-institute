@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Artists{% endblock %}
+
+{% block content %}
+<div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold text-gray-800">Artists</h1>
+    <a href="{{ url_for('create_artist') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        + Add Artist
+    </a>
+</div>
+
+<div class="bg-white rounded-lg shadow-md">
+    <ul class="divide-y divide-gray-200">
+        {% for artist in artists %}
+        <li class="p-4 flex justify-between items-center">
+            <span class="text-lg text-gray-800">{{ artist.name }}</span>
+            <div class="flex space-x-2">
+                <a href="{{ url_for('edit_artist', artist_id=artist.id) }}" class="text-sm bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-1 px-3 rounded">Edit</a>
+                <form action="{{ url_for('delete_artist', artist_id=artist.id) }}" method="post" class="inline-block" onsubmit="return confirm('Are you sure? This action cannot be undone.');">
+                    <button type="submit" class="text-sm bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded">Delete</button>
+                </form>
+            </div>
+        </li>
+        {% else %}
+        <li class="p-4 text-gray-600">No artists found.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
