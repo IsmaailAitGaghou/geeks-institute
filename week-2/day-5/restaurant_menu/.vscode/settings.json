@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "restauran",
+            "connectString": "postgresql://neondb_owner:npg_gaXEme2nHMw9@ep-rapid-river-ad3khcpv-pooler.c-2.us-east-1.aws.neon.tech/restaurant_menu?sslmode=require&channel_binding=require"
+        }
+    ]
+}
