@@ -59,6 +59,26 @@
             "database": "library_db",
             "username": "postgres",
             "password": "ismaail123@"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "restaurant_menu",
+            "database": "restaurant_menu_db",
+            "password": "1234",
+            "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "public1",
+            "database": "public",
+            "username": "postgres",
+            "password": "1234"
         }
     ]
 }
