@@ -34,7 +34,7 @@ Edit Artist
         </div>
         <div class="mb-6">
             <label class="block text-gray-700 font-bold mb-2">Artists</label>
-            <p class="text-sm text-gray-500 mb-2">Hold Ctrl (or Cmd on Mac) to select multiple artists.</p>
+            <p class="text-sm text-gray-500 mb-2">Hold Ctrl to select multiple artists.</p>
             <select name="artists" multiple class="w-full h-40 px-3 py-2 border rounded-md">
                 {% for artist in artists %}
                 <option value="{{ artist[0] }}" {% if artist[0] in selected_artist_ids %}selected{% endif %}>{{
