@@ -59,3 +59,4 @@ CREATE TABLE api_keys (
 CREATE INDEX ON events (organizer_id);
 CREATE INDEX ON tickets (event_id);
 CREATE INDEX ON tickets (attendee_id);
+
