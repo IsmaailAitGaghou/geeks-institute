@@ -14,7 +14,11 @@ initRoot.appendChild(form);
 
 let clearAll = document.createElement("button");
 clearAll.textContent = "Clear All";
-initRoot.appendChild(clearAll);
+clearAll.addEventListener("click", function () {
+    shoppingList = [];
+    renderShoppingList();
+});
+form.appendChild(clearAll);
 
 function addItem(event) {
     event.preventDefault();
