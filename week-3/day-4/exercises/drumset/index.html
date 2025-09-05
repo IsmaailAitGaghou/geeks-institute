@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drum Set</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('goku-dragon-ball-3840x2160-14373.jpg');
+            background-size: cover;
+            color: white;
+            
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 90lvh;
+        }
+
+        .button {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            background-color: #3be3fdc2;
+            color: white;
+            transition: background-color 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.596);
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .button:active {
+            background-color: #17dcfa;
+            box-shadow: #17e0ff 0px 0px 90px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    
+        <!-- Buttons for drums -->
+        <button class="boom button" onclick="">A</button>
+        <button class="clap button" onclick="">S</button>
+        <button class="hihat button" onclick="">D</button>
+        <button class="kick button" onclick="">F</button>
+        <button class="openhat button" onclick="">G</button>
+        <button class="ride button" onclick="">H</button>
+        <button class="snare button" onclick="">J</button>
+        <button class="tink button" onclick="">K</button>
+        <button class="tom button" onclick="">L</button>
+
+        <!-- Drum sounds -->
+        <audio class="boom-sound" src="sounds/boom.wav"></audio>
+        <audio class="clap-sound" src="sounds/clap.wav"></audio>
+        <audio class="hihat-sound" src="sounds/hihat.wav"></audio>
+        <audio class="kick-sound" src="sounds/kick.wav"></audio>
+        <audio class="openhat-sound" src="sounds/openhat.wav"></audio>
+        <audio class="ride-sound" src="sounds/ride.wav"></audio>
+        <audio class="snare-sound" src="sounds/snare.wav"></audio>
+        <audio class="tink-sound" src="sounds/tink.wav"></audio>
+        <audio class="tom-sound" src="sounds/tom.wav"></audio>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
