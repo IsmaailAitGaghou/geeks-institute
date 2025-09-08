@@ -1,13 +1,13 @@
 let stars = "";
 for (let i = 0; i < 6; i++) {
     stars += "* ";
-    console.log(star);
+    console.log(stars);
 }
 
-let stars2 = "";
 for (let i = 0; i < 6; i++) {
-    stars2 += "* ";
+    let stars2 = "";
     for (let j = 0; j <= i; j++) {
-        console.log(stars2);
+        stars2 += "* ";
     }
+    console.log(stars2);
 }
