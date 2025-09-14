@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise 1: GET Form</h1>
+    <form action="" method="GET">
+        <label for="name1">Name:</label>
+        <input type="text" id="name1" name="name"><br><br>
+    
+        <label for="message1">Message:</label><br>
+        <textarea id="message1" name="message" rows="4" cols="50"></textarea><br>
+    
+        <input type="submit" value="Send">
+    </form>
+    
+    <p>The data will appear in the URL query string ?name=ismaail&message=Hello</p>
+
+    <h1>Exercise 2: POST Form</h1>
+    <form action="" method="POST">
+        <label for="name2">Name:</label>
+        <input type="text" id="name2" name="name"><br><br>
+
+        <label for="message2">Message:</label><br>
+        <textarea id="message2" name="message" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Send">
+    </form>
+
+    <h2>Exercise 3: JSON Mario</h2>
+    <pre id="Output"></pre>
+    
+    <script>
+        const marioGame = {
+            detail: "An amazing game!",
+            characters: {
+                mario: {
+                    description: "Small and jumpy. Likes princesses.",
+                    height: 10,
+                    weight: 3,
+                    speed: 12,
+                },
+                bowser: {
+                    description: "Big and green, Hates princesses.",
+                    height: 16,
+                    weight: 6,
+                    speed: 4,
+                },
+                princessPeach: {
+                    description: "Beautiful princess.",
+                    height: 12,
+                    weight: 2,
+                    speed: 2,
+                }
+            }
+        };
+
+        const marioJSON = JSON.stringify(marioGame);
+        console.log(marioJSON);
+
+        const marioPrettyJSON = JSON.stringify(marioGame, null, 2);
+        document.getElementById('Output').textContent = marioPrettyJSON;
+
+    </script>
+</body>
+</html>

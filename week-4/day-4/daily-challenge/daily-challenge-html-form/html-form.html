@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>HTML FORM</p>
+    <form action="" method="GET">
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+    
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required /><br /><br />
+    
+        <input type="submit" value="Send" />
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+        const form = document.querySelector('form');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            const formData = new FormData(form);
+            const name = formData.get('name');
+            const lastName = formData.get('lastname');
+            formData.json = JSON.stringify(Object.fromEntries(formData.entries()));
+            output.textContent = formData.json;
+        });
+
+    </script>
+</body>
+</html>
