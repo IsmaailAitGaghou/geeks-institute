@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Random Quote Generator</h1>
+        </header>
+        <section id="quoteSection" class="quote-box">
+            <p>Click <strong>Generate Quote</strong> to start!</p>
+        </section>
+        <div class="actions">
+            <button id="generateBtn">Generate Quote</button>
+            <button id="likeBtn">&#10084;&#65039; Like</button>
+        </div>
+        <div class="stats">
+            <button id="countCharsSpace">Chars (with spaces)</button>
+            <button id="countCharsNoSpace">Chars (no spaces)</button>
+            <button id="countWords">Word Count</button>
+        </div>
+        <section class="form-box">
+            <h2>Add a New Quote</h2>
+            <form id="addQuoteForm" autocomplete="off">
+                <input type="text" id="newQuote" placeholder="Enter a quote" required>
+                <input type="text" id="newAuthor" placeholder="Enter author name" required>
+                <button type="submit" id="addQuoteBtn">Add Quote</button>
+            </form>
+        </section>
+        <section class="form-box">
+            <h2>Filter by Author</h2>
+            <form id="filterForm" autocomplete="off">
+                <input type="text" id="filterAuthor" placeholder="Enter author name">
+                <button type="submit" id="filterBtn">Filter</button>
+            </form>
+            <div class="nav-btns">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
