@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Frontend Intern",
+    "location": "Casablanca",
+    "skillsRequired": ["React", "JavaScript", "Git"],
+    "jdSnippet": "We build modern UI with React and follow Git workflows. Perfect for junior developers."
+  },
+  {
+    "title": "Backend Developer",
+    "location": "Rabat",
+    "skillsRequired": ["Python", "Django", "SQL"],
+    "jdSnippet": "Backend development with Python and Django. Experience with databases required."
+  },
+  {
+    "title": "Full Stack Intern",
+    "location": "Casablanca",
+    "skillsRequired": ["React", "Node.js", "JavaScript"],
+    "jdSnippet": "Full-stack development opportunity using React and Node.js for modern web applications."
+  }
+]

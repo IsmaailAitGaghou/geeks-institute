@@ -1,0 +1,134 @@
+[
+  {
+    "firstName": "Amina",
+    "lastName": "El Idrissi",
+    "email": "amina@example.com",
+    "location": "Casablanca",
+    "experienceYears": 1,
+    "skills": ["React", "JavaScript", "HTML", "CSS"],
+    "availabilityDate": "2025-10-01",
+    "stage": "SOURCED",
+    "notes": "Strong portfolio with React projects"
+  },
+  {
+    "firstName": "Youssef",
+    "lastName": "Bennani",
+    "email": "youssef@example.com",
+    "location": "Rabat",
+    "experienceYears": 2,
+    "skills": ["Python", "Django", "SQL", "Git"],
+    "availabilityDate": "2025-09-15",
+    "stage": "SCREEN",
+    "notes": "Backend developer with Django experience"
+  },
+  {
+    "firstName": "Sara",
+    "lastName": "Alami",
+    "email": "sara@example.com",
+    "location": "Casablanca",
+    "experienceYears": 0,
+    "skills": ["React", "JavaScript", "Git", "HTML"],
+    "availabilityDate": "2025-10-15",
+    "stage": "SOURCED",
+    "notes": "Recent graduate, eager to learn"
+  },
+  {
+    "firstName": "Ahmed",
+    "lastName": "Fahmi",
+    "email": "ahmed@example.com",
+    "location": "Marrakech",
+    "experienceYears": 3,
+    "skills": ["Python", "React", "SQL", "Docker"],
+    "availabilityDate": "2025-11-01",
+    "stage": "INTERVIEW",
+    "notes": "Full-stack developer with strong background"
+  },
+  {
+    "firstName": "Fatima",
+    "lastName": "Zahra",
+    "email": "fatima@example.com",
+    "location": "Casablanca",
+    "experienceYears": 1,
+    "skills": ["JavaScript", "Vue.js", "CSS", "Git"],
+    "availabilityDate": "2025-09-20",
+    "stage": "SOURCED",
+    "notes": "Frontend developer with Vue.js expertise"
+  },
+  {
+    "firstName": "Omar",
+    "lastName": "Benali",
+    "email": "omar@example.com",
+    "location": "Fes",
+    "experienceYears": 2,
+    "skills": ["Java", "Spring", "SQL", "Git"],
+    "availabilityDate": "2025-10-10",
+    "stage": "SCREEN",
+    "notes": "Java developer with Spring framework"
+  },
+  {
+    "firstName": "Aicha",
+    "lastName": "Marouane",
+    "email": "aicha@example.com",
+    "location": "Casablanca",
+    "experienceYears": 0,
+    "skills": ["React", "JavaScript", "HTML", "CSS", "Git"],
+    "availabilityDate": "2025-09-25",
+    "stage": "SOURCED",
+    "notes": "Bootcamp graduate with strong React skills"
+  },
+  {
+    "firstName": "Karim",
+    "lastName": "Hajji",
+    "email": "karim@example.com",
+    "location": "Tangier",
+    "experienceYears": 4,
+    "skills": ["Python", "Flask", "PostgreSQL", "Docker"],
+    "availabilityDate": "2025-12-01",
+    "stage": "INTERVIEW",
+    "notes": "Senior backend developer"
+  },
+  {
+    "firstName": "Nadia",
+    "lastName": "Fassi",
+    "email": "nadia@example.com",
+    "location": "Rabat",
+    "experienceYears": 1,
+    "skills": ["React", "TypeScript", "Node.js", "Git"],
+    "availabilityDate": "2025-09-30",
+    "stage": "SOURCED",
+    "notes": "Full-stack developer with TypeScript"
+  },
+  {
+    "firstName": "Mehdi",
+    "lastName": "Ouali",
+    "email": "mehdi@example.com",
+    "location": "Casablanca",
+    "experienceYears": 2,
+    "skills": ["React", "JavaScript", "Redux", "Git"],
+    "availabilityDate": "2025-10-05",
+    "stage": "SCREEN",
+    "notes": "React specialist with Redux experience"
+  },
+  {
+    "firstName": "Zineb",
+    "lastName": "Tazi",
+    "email": "zineb@example.com",
+    "location": "Casablanca",
+    "experienceYears": 0,
+    "skills": ["Python", "Django", "HTML", "CSS"],
+    "availabilityDate": "2025-09-18",
+    "stage": "SOURCED",
+    "notes": "Junior developer with Django knowledge"
+  },
+  {
+    "firstName": "Hamza",
+    "lastName": "Berrada",
+    "email": "hamza@example.com",
+    "location": "Agadir",
+    "experienceYears": 3,
+    "skills": ["JavaScript", "React", "Node.js", "MongoDB"],
+    "availabilityDate": "2025-11-15",
+    "stage": "INTERVIEW",
+    "notes": "MERN stack developer"
+  }
+]
