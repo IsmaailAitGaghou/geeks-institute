@@ -24,7 +24,7 @@ CREATE TABLE album (
 
 CREATE TABLE album_artist (
     album_id INTEGER NOT NULL REFERENCES album(id) ON DELETE CASCADE,
-    artist_id INTEGER NOT NULL REFERENCES artist(id) ON DELETE RESTRICT, -- Use RESTRICT to prevent accidental artist deletion
+    artist_id INTEGER NOT NULL REFERENCES artist(id) ON DELETE RESTRICT, 
     PRIMARY KEY (album_id, artist_id)
 );
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifs</title>
+</head>
+<body>
+    <form id="gif-form">
+        <input type="text" id="gif-input" placeholder="Search for GIFs" required>
+        <button type="submit">Search GIFs</button>
+    </form>
+
+    <button id="gif-clear">Clear GIFs</button>
+    <div id="gif-results"></div>
+
+    <script>
+        document.getElementById('gif-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const query = document.getElementById('gif-input').value;
+            const apiKey = 'hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My';
+            const url = `https://api.giphy.com/v1/gifs/search?q=${encodeURIComponent(query)}&rating=g&api_key=${apiKey}&limit=1`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                const resultsDiv = document.getElementById('gif-results');
+                // resultsDiv.innerHTML = '';
+
+                data.data.forEach(gif => {
+                    const div = document.createElement('div');
+                    const img = document.createElement('img');
+                    const button = document.createElement('button');
+                    button.textContent = 'Remove GIF';
+                    
+                    img.src = gif.images.original.url;
+                    div.appendChild(img);
+                    div.appendChild(button);
+                    button.addEventListener('click', function() {
+                        resultsDiv.removeChild(div);
+                    });
+                    resultsDiv.appendChild(div);
+                });
+            } catch (error) {
+                console.error('Error fetching GIFs:', error);
+            }
+        });
+
+        document.getElementById('gif-clear').addEventListener('click', function() {
+            document.getElementById('gif-results').innerHTML = '';
+        });
+    </script>
+</body>
+</html>

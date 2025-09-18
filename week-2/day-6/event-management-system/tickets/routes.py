@@ -71,7 +71,7 @@ def api_create_ticket():
 @tickets_bp.route('/api/tickets/<int:ticket_id>', methods=['DELETE'])
 @api_middleware
 def api_delete_ticket(ticket_id):
-    conn = get_db_conn(); 
+    conn = get_db_conn()
     cur = conn.cursor()
     try:
         cur.execute("DELETE FROM tickets WHERE ticket_id=%s", (ticket_id,))
