@@ -1,6 +1,7 @@
 const form = document.querySelector("#converter-form");
 const fromCurrencySelect = document.querySelector("#from-currency");
 const toCurrencySelect = document.querySelector("#to-currency");
+const amountInput = document.querySelector("#amount");
 const resultDisplay = document.querySelector("#result");
 const switchBtn = document.querySelector("#switch-button");
 let apiKey = "18ac5d2b27975a2eaa18603a";
@@ -58,9 +59,9 @@ const convertCurrency = async (amount, fromCurrency, toCurrency) => {
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const amount = parseFloat(document.querySelector("#amount").value);
-  const fromCurrency = document.querySelector("#from-currency").value;
-  const toCurrency = document.querySelector("#to-currency").value;
+  const amount = parseFloat(amountInput.value);
+  const fromCurrency = fromCurrencySelect.value;
+  const toCurrency = toCurrencySelect.value;
 
   if (!amount || !fromCurrency || !toCurrency) {
     alert("Please fill in all fields.");
@@ -73,8 +74,10 @@ form.addEventListener("submit", async (e) => {
 
 populateCurrencyDropdowns();
 
-switchBtn.addEventListener("click", () => {
+switchBtn.addEventListener("click", async () => {
   const fromValue = fromCurrencySelect.value;
   fromCurrencySelect.value = toCurrencySelect.value;
   toCurrencySelect.value = fromValue;
+  const result = await convertCurrency(amountInput.value, fromCurrencySelect.value, toCurrencySelect.value);
+  resultDisplay.textContent = result.toFixed(2);
 });
