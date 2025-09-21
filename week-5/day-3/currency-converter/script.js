@@ -74,7 +74,7 @@ form.addEventListener("submit", async (e) => {
 populateCurrencyDropdowns();
 
 switchBtn.addEventListener("click", () => {
-  const temp = fromCurrencySelect.value;
+  const fromValue = fromCurrencySelect.value;
   fromCurrencySelect.value = toCurrencySelect.value;
-  toCurrencySelect.value = temp;
+  toCurrencySelect.value = fromValue;
 });
