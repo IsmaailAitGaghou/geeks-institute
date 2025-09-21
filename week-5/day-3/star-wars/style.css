@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    background: url("https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp");
+    text-align: center;
+}
+
+.wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png") no-repeat center ;
+    background-size: contain;
+    width: 300px;
+    height: 250px;
+}
+
+.info-container {
+    /* margin-top: 20px; */
+    color: white;
+    /* width: 600px; */
+    border: 3px solid yellow;
+    width: 40%;
+    height: 260px;
+    border-radius: 20px;
+    
+}
+
+#generate-button {
+    color: black;
+    background-color: rgb(231, 230, 230);
+    border: 2px solid yellow;
+    padding: 7px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.info-container h1 {
+    margin-block: 20px;
+}
+
+.info-container p {
+    font-size: 18px;
+    line-height: 2.3;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+.info-container i {
+    font-size: 100px;
+    margin-block: 30px;
+}
+
+.info-container span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.error {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 80px;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}

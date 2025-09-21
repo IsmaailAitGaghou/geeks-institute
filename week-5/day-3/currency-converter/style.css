@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: url('https://plus.unsplash.com/premium_photo-1681487767138-ddf2d67b35c1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3VycmVuY3klMjBleGNoYW5nZXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 15px;
+    background: #6165da9c;
+    width: 40%;
+}
+
+#converter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-block: 30px;
+    font-size: 25px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#converter-form div input, #converter-form div select {
+    padding: 10px;
+    width: 100%;
+    background-color: #6165da;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+#converter-form input::placeholder {
+    color: white;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    width: 50%;
+    padding: 5px 0;
+    color: black;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#switch-button {
+    background: #f4f4f4 url(https://github.com/devtlv/studentsGitHub/blob/master/Images%20cours%20%C3%A0%20h%C3%A9berger%20-%2006.03.2024/Week%207%20-%20Adv%20&%20Asynchronous%20Javascript/W7D5/148588337-233540b7-aac6-4b25-bbf4-520765380f59.png?raw=true) no-repeat left;
+    background-size: contain;
+}
