@@ -1,15 +1,14 @@
 {
-  "name": "npm-beginner",
+  "name": "date-fns-usage",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "ismail",
+  "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "chalk": "^5.6.2"
-  },
-  "type": "module"
+    "date-fns": "^4.1.0"
+  }
 }
